@@ -14,7 +14,8 @@ class JokeCommand {
             .action(async () => {
                 try {
                     const response = await axios.get("https://official-joke-api.appspot.com/random_joke");
-                    console.log(response.data.setup, response.data.punchline);
+                    console.log(`\nSetup:     ${response.data.setup}`);
+                    console.log(`Punchline: ${response.data.punchline}\n`);
                 } catch (error) {
                     console.error("Error fetching joke:", error);
                 }

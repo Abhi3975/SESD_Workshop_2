@@ -8,11 +8,17 @@ class GreetCommand {
     register(){
         this.program
         .command("greet <name>")
-        .action((name) => {this.greetName(name)});
+        .option("-e, --excited", "Greets with extra excitement")
+        .description("Simple greeting command")
+        .action((name: string, options: any) => {this.greetName(name, options)});
     }
 
-    greetName(name){
-        console.log(`Hello ${name}`);
+    greetName(name: string, options: any){
+        let greeting = `Hello, ${name}! Welcome to MyCLI.`;
+        if (options.excited) {
+            greeting += " !!!";
+        }
+        console.log(greeting);
     }
 }
 module.exports = GreetCommand;

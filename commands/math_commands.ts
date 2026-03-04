@@ -9,22 +9,25 @@ class MathCommands {
         this.program
             .command("add <n1> <n2>")
             .description("Adds two numbers together")
-            .action((n1: string, n2: string) => { console.log(`${Number(n1) + Number(n2)}`) });
+            .action((n1: string, n2: string) => { console.log(`${n1} + ${n2} = ${Number(n1) + Number(n2)}`) });
 
         this.program
             .command("subtract <n1> <n2>")
             .description("Subtracts the second number from the first")
-            .action((n1: string, n2: string) => { console.log(`${Number(n1) - Number(n2)}`) });
+            .action((n1: string, n2: string) => { console.log(`${n1} - ${n2} = ${Number(n1) - Number(n2)}`) });
 
         this.program
             .command("multiply <n1> <n2>")
             .description("Multiplies two numbers together")
-            .action((n1: string, n2: string) => { console.log(`${Number(n1) * Number(n2)}`) });
+            .action((n1: string, n2: string) => { console.log(`${n1} * ${n2} = ${Number(n1) * Number(n2)}`) });
 
         this.program
             .command("divide <n1> <n2>")
             .description("Divides the first number by the second")
-            .action((n1: string, n2: string) => { console.log(`${Number(n1) / Number(n2)}`) });
+            .action((n1: string, n2: string) => {
+                const result = Number(n1) / Number(n2);
+                console.log(`${n1} / ${n2} = ${result}`);
+            });
     }
 }
 

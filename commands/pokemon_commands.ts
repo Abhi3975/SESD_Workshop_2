@@ -17,7 +17,7 @@ class PokemonCommands {
                     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
                     const name = response.data.name;
                     const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
-                    console.log(capitalizedName);
+                    console.log(`\nA wild ${capitalizedName} appeared!\n`);
                 } catch (error) {
                     console.error("Error fetching pokemon:", error);
                 }

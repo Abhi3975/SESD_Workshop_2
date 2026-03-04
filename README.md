@@ -8,7 +8,7 @@ Make sure you have Node.js and npm installed.
 
 ```bash
 # Clone the repository
-git clone https://github.com/vedansha07/SESD_Workshop_2.git
+git clone https://github.com/Abhi3975/SESD_Workshop_2.git
 
 # Navigate into the directory
 cd SESD_Workshop_2

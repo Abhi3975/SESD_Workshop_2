@@ -30,17 +30,17 @@ Here are all the commands you can use with `mycli`:
 ### Core Commands
 
 *   `mycli init-ts <foldername>`: Initializes a standard TypeScript project structure in a new folder, installing dependencies and creating the necessary config files.
-*   `mycli greet <name>`: Simple greeting command that prints "Hello [name]".
+*   `mycli greet <name>`: Simple greeting command. Use `-e` or `--excited` for extra enthusiasm.
 
 ### Math Commands
-*   `mycli add <n1> <n2>`: Adds two numbers together.
-*   `mycli subtract <n1> <n2>`: Subtracts the second number from the first.
-*   `mycli multiply <n1> <n2>`: Multiplies two numbers together.
-*   `mycli divide <n1> <n2>`: Divides the first number by the second.
+*   `mycli add <n1> <n2>`: Adds two numbers together. (Output format: `n1 + n2 = result`)
+*   `mycli subtract <n1> <n2>`: Subtracts the second number from the first. (Output format: `n1 - n2 = result`)
+*   `mycli multiply <n1> <n2>`: Multiplies two numbers together. (Output format: `n1 * n2 = result`)
+*   `mycli divide <n1> <n2>`: Divides the first number by the second. (Output format: `n1 / n2 = result`)
 
 ### Fun & Utility Commands
-*   `mycli joke`: Tells a random programming joke fetched from the Official Joke API.
-*   `mycli pokemon`: Gets the name of a random Pokemon from the PokeAPI.
+*   `mycli joke`: Tells a random programming joke with clear labels for setup and punchline.
+*   `mycli pokemon`: Gets the name of a random Pokemon (e.g., "A wild Pikachu appeared!").
 *   `mycli quote`: Retrieves a random inspirational quote from ZenQuotes.
 *   `mycli password <length>`: Generates a strong, random password of the specified length.
 *   `mycli define <word>`: Looks up the dictionary definition, part of speech, and meaning of the provided word.
